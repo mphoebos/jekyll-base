@@ -1,2 +1,8 @@
 # Redirects from what the browser requests to what we serve
-/netlify/anything    https://www.google.com/search?q=anything
+/netlify/anything    https://www.google.com/search?q=anything   301
+[[redirects]]
+  from = "/netlify/anything"
+  to = "https://www.google.com/search?q=anything"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
